@@ -22,7 +22,7 @@ public class Carro {
         this.ano = ano;      
     }
    
-   public Carro(int ano, String modelo){
+   public Carro(int ano, String modelo, String placa){
         this.modelo = modelo;
         this.ano = ano;      
     }
