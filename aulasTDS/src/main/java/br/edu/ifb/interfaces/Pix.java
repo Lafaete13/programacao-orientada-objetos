@@ -8,7 +8,7 @@ package br.edu.ifb.interfaces;
  *
  * @author dariopintor
  */
-public class Pix implements Pagamento{
+public class Pix implements Pagamento, OutraInterface{
 
     @Override
     public void processarPagamento(double quantia) {
@@ -18,6 +18,11 @@ public class Pix implements Pagamento{
     @Override
     public void emetirRecibo(String detalhes) {
      System.out.println("Recibo de pagamamento no pix: " + detalhes);
+    }
+
+    @Override
+    public void outroMetodo() {
+        System.out.println("");
     }
     
 }
